@@ -125,6 +125,7 @@ a {
   color: #162a36;
 }
 
+.button,
 button {
   cursor: pointer;
   top: 0;
@@ -132,8 +133,6 @@ button {
   position: relative;
   display: inline-block;
   transition: all 0.15s linear 0s;
-  display: flex;
-  flex-direction: row;
   padding: 16px 24px;
   background: #ffffff;
   border: 4px solid #162a36;
@@ -146,6 +145,8 @@ button {
   color: #162a36;
 }
 
+.button:hover,
+.button:focus,
 button:hover,
 button:focus {
   top: 4px;
@@ -154,6 +155,7 @@ button:focus {
   outline: none;
 }
 
+.button:active,
 button:active {
   top: 8px;
   left: -8px;
