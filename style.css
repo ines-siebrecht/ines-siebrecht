@@ -69,6 +69,10 @@ select {
 }
 
 /* Portfolio */
+html {
+  scroll-behavior: smooth;
+}
+
 h1 {
   font-family: Work Sans;
   font-weight: 800;
@@ -156,4 +160,33 @@ button:active {
   box-shadow: none;
   background-color: #162a36;
   color: #ffffff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto minmax(40vw, 580px) minmax(40vw, 580px) auto;
+  grid-template-rows: 100vh auto auto auto auto;
+  gap: 32px 0px;
+  grid-template-areas:
+    "hero hero hero hero" ". work work ." ". about about ."
+    ". contact contact ." "footer footer footer footer";
+}
+.hero {
+  grid-area: hero;
+}
+
+.work {
+  grid-area: work;
+}
+
+.about {
+  grid-area: about;
+}
+
+.contact {
+  grid-area: contact;
+}
+
+.footer {
+  grid-area: footer;
 }
