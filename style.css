@@ -67,3 +67,93 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+/* Portfolio */
+h1 {
+  font-family: Work Sans;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 88px;
+}
+
+h2 {
+  font-family: Work Sans;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 70px;
+}
+h3 {
+  font-family: Work Sans;
+  font-size: 32px;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: Bitter;
+  font-size: 20px;
+  line-height: 29px;
+  text-transform: uppercase;
+}
+
+nav {
+  font-family: Work Sans;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #162a36;
+}
+
+body {
+  font-family: Bitter;
+  font-size: 18px;
+  line-height: 30px;
+  color: #162a36;
+}
+
+a {
+  font-family: Bitter;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-decoration-line: underline;
+  color: #162a36;
+}
+
+button {
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  position: relative;
+  display: inline-block;
+  transition: all 0.15s linear 0s;
+  display: flex;
+  flex-direction: row;
+  padding: 16px 24px;
+  background: #ffffff;
+  border: 4px solid #162a36;
+  box-shadow: -8px 8px 0px #162a36;
+  font-family: Work Sans, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #162a36;
+}
+
+button:hover,
+button:focus {
+  top: 4px;
+  left: -4px;
+  box-shadow: -4px 4px 0px #162a36;
+  outline: none;
+}
+
+button:active {
+  top: 8px;
+  left: -8px;
+  box-shadow: none;
+  background-color: #162a36;
+  color: #ffffff;
+}
