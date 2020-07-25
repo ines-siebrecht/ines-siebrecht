@@ -397,4 +397,15 @@ button:active {
 
 .footer {
   grid-area: footer;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__link {
+  padding: 120px 0 16px 0;
+  font-size: 12px;
+}
+
+.impressum {
+  padding: 48px;
 }
