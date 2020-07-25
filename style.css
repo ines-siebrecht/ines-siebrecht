@@ -197,12 +197,44 @@ button:active {
   grid-area: hero;
   display: grid;
   grid-template-columns: auto minmax(40vw, 580px) minmax(40vw, 580px) auto;
-  grid-template-rows: 100px auto;
+  grid-template-rows: 128px auto;
   gap: 0px 0px;
 }
 
 .header {
   grid-area: 1 / 2 / 2 / 4;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.nav {
+  list-style: none;
+}
+
+.nav__navListItem {
+  margin: 0;
+  padding: 0;
+  float: left;
+  margin-left: 48px;
+}
+
+.nav__navLink {
+  font-family: Work Sans, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav__navLink:hover {
+  color: #f24130;
+}
+
+.nav__navLink:active {
+  color: #0b8c5d;
 }
 
 .heroContent {
@@ -220,7 +252,7 @@ button:active {
 
 .heroImage {
   grid-area: 1 / 3 / 3 / 5;
-  background-color: palevioletred;
+  background-color: #8ad0b9;
 }
 
 .work {
