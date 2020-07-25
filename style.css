@@ -344,6 +344,29 @@ button:active {
 
 .about {
   grid-area: about;
+  padding: 48px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto min-content;
+  gap: 0 24px;
+  grid-template-areas: "about__headline about__headline" "about__image about__text";
+  grid-area: about;
+}
+
+.about__headline {
+  grid-area: about__headline;
+  padding-bottom: 48px;
+}
+
+.about__image {
+  grid-area: about__image;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.about__text {
+  grid-area: about__text;
 }
 
 .contact {
