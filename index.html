@@ -9,9 +9,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script>
+      $(window).load(function () {
+        $("body").removeClass("preload");
+      });
+    </script>
   </head>
 
-  <body class="gridContainer">
+  <body class="preload gridContainer">
     <div class="hero">
       <header class="header">
         <image src="logo.svg" height="64" />
