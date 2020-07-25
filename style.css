@@ -276,7 +276,7 @@ button:active {
 }
 
 .case1 .teaser__overlay {
-  background-color: #ffd700d1;
+  background-color: #ffd700e0;
 }
 
 .case2 {
@@ -285,7 +285,7 @@ button:active {
 }
 
 .case2 .teaser__overlay {
-  background-color: #8ad0b9d1;
+  background-color: #8ad0b9e0;
 }
 
 .case3 {
@@ -294,7 +294,7 @@ button:active {
 }
 
 .case3 .teaser__overlay {
-  background-color: #f2a2a2d1;
+  background-color: #f2a2a2e0;
 }
 
 .case4 {
@@ -303,7 +303,7 @@ button:active {
 }
 
 .case4 .teaser__overlay {
-  background-color: #f24130d1;
+  background-color: #f24130e0;
 }
 
 .teaser {
@@ -314,9 +314,10 @@ button:active {
   opacity: 1;
 }
 .teaser__image {
-  display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  padding: 8px;
+  object-fit: contain;
 }
 .teaser__overlay {
   position: absolute;
