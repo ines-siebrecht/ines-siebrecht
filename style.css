@@ -1,8 +1,10 @@
-/* CSS reset by dev.to */
 *,
-*::before,
-*::after {
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  position: relative;
 }
 
 ul[class],
@@ -74,10 +76,36 @@ html {
 }
 
 h1 {
-  font-family: Work Sans;
+  font-family: Work Sans, Arial, Helvetica, sans-serif;
   font-weight: 800;
-  font-size: 64px;
-  line-height: 88px;
+  font-size: 160px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.1;
+  position: sticky;
+  text-shadow: -2px 2px 0 #ffffff;
+}
+h1:after {
+  content: attr(data-shadow);
+  position: absolute;
+  top: 8px;
+  left: -8px;
+  z-index: -1;
+  text-shadow: none;
+  background-image: url(stripes.png);
+  background-size: 8px 8px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: headline 15s linear infinite;
+}
+@keyframes headline {
+  0% {
+    background-position: 0 0;
+  }
+  0% {
+    background-position: 100% -100%;
+  }
 }
 
 h2 {
@@ -98,15 +126,6 @@ h4 {
   font-size: 20px;
   line-height: 29px;
   text-transform: uppercase;
-}
-
-nav {
-  font-family: Work Sans;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 28px;
-  text-transform: uppercase;
-  color: #162a36;
 }
 
 body {
@@ -173,6 +192,7 @@ button:active {
     "hero hero hero hero" ". work work ." ". about about ."
     ". contact contact ." "footer footer footer footer";
 }
+
 .hero {
   grid-area: hero;
   display: grid;
