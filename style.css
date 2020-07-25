@@ -117,7 +117,6 @@ h2 {
 h3 {
   font-family: Work Sans;
   font-size: 32px;
-  line-height: 42px;
   text-transform: uppercase;
 }
 
@@ -333,6 +332,14 @@ button:active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.teaser__category {
+  font-size: 12px;
+}
+
+.teaser__headline {
+  margin-bottom: 48px;
 }
 
 .about {
