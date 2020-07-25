@@ -234,14 +234,6 @@ body {
   text-decoration: none;
 }
 
-.nav__navLink:hover {
-  color: #f24130;
-}
-
-.nav__navLink:active {
-  color: #0b8c5d;
-}
-
 .heroContent {
   grid-area: 2 / 2 / 3 / 3;
   padding-top: 120px;
@@ -378,6 +370,8 @@ body {
 .contact {
   grid-area: contact;
   padding: 48px 0;
+  justify-self: center;
+  width: 60%;
 }
 
 .contact__headline {
