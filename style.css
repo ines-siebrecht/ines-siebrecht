@@ -207,6 +207,15 @@ button:active {
 
 .heroContent {
   grid-area: 2 / 2 / 3 / 3;
+  padding-top: 120px;
+}
+
+.heroContent__header {
+  margin-bottom: 48px;
+}
+
+.heroContent__intro {
+  margin-bottom: 36px;
 }
 
 .heroImage {
