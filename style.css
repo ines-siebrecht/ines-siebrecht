@@ -92,7 +92,7 @@ h1:after {
   left: -8px;
   z-index: -1;
   text-shadow: none;
-  background-image: url(stripes.png);
+  background-image: url(images/patterns/stripes.png);
   background-size: 8px 8px;
   -webkit-background-clip: text;
   background-clip: text;
@@ -151,6 +151,7 @@ button {
   left: 0;
   position: relative;
   display: inline-block;
+  align-self: center;
   transition: all 0.15s linear 0s;
   padding: 8px 16px;
   background: #ffffff;
@@ -257,6 +258,80 @@ button:active {
 
 .work {
   grid-area: work;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto minmax(40vh, 400px) minmax(40vh, 400px);
+  gap: 32px 24px;
+  grid-template-areas: "work__header work__header" "case1 case2" "case3 case4";
+}
+
+.work__header {
+  grid-area: work__header;
+  padding: 64px 0 16px 0;
+}
+
+.case1 {
+  grid-area: case1;
+  background: url(images/patterns/back_1.png) repeat;
+}
+
+.case1 .teaser__overlay {
+  background-color: #ffd700d1;
+}
+
+.case2 {
+  grid-area: case2;
+  background: url(images/patterns/back_2.png) repeat;
+}
+
+.case2 .teaser__overlay {
+  background-color: #8ad0b9d1;
+}
+
+.case3 {
+  grid-area: case3;
+  background: url(images/patterns/back_3.png) repeat;
+}
+
+.case3 .teaser__overlay {
+  background-color: #f2a2a2d1;
+}
+
+.case4 {
+  grid-area: case4;
+  background: url(images/patterns/back_4.png) repeat;
+}
+
+.case4 .teaser__overlay {
+  background-color: #f24130d1;
+}
+
+.teaser {
+  position: relative;
+}
+
+.teaser:hover .teaser__overlay {
+  opacity: 1;
+}
+.teaser__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.teaser__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .about {
