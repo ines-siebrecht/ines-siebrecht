@@ -83,7 +83,7 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 0.1;
   position: sticky;
-  text-shadow: -2px 2px 0 #ffffff;
+  z-index: 1;
 }
 h1:after {
   content: attr(data-shadow);
@@ -135,7 +135,7 @@ body {
   color: #162a36;
 }
 
-a {
+.link {
   font-family: Bitter;
   font-weight: bold;
   font-size: 18px;
@@ -144,8 +144,15 @@ a {
   color: #162a36;
 }
 
-.button,
-button {
+.link:hover {
+  color: #f24130;
+}
+
+.link:active {
+  color: #0b8c5d;
+}
+
+.button {
   cursor: pointer;
   top: 0;
   left: 0;
@@ -166,17 +173,14 @@ button {
 }
 
 .button:hover,
-.button:focus,
-button:hover,
-button:focus {
+.button:focus {
   top: 4px;
   left: -4px;
   box-shadow: -4px 4px 0px #162a36;
   outline: none;
 }
 
-.button:active,
-button:active {
+.button:active {
   top: 8px;
   left: -8px;
   box-shadow: none;
