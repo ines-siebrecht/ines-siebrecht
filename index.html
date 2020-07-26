@@ -67,7 +67,14 @@
   <body class="preload gridContainer" id="body">
     <div class="hero">
       <header class="header">
-        <image src="images/logo.svg" height="64" alt="logo" />
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="images/logo--small.svg"
+            alt="logo"
+          />
+          <image src="images/logo.svg" height="64" alt="logo" />
+        </picture>
         <ul class="nav">
           <li class="nav__navListItem">
             <a class="link nav__navLink" href="#work" tabindex="0">Work</a>
@@ -83,7 +90,7 @@
         </ul>
       </header>
       <div class="heroContent">
-        <h1 class="heroContent__header" data-shadow="Hello World.">
+        <h1 class="heroContent__headline" data-shadow="Hello World.">
           Hello World.
         </h1>
         <p class="heroContent__intro">

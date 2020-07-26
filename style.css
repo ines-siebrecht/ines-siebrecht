@@ -192,8 +192,8 @@ body {
 .gridContainer {
   display: grid;
   grid-template-columns: auto minmax(40vw, 580px) minmax(40vw, 580px) auto;
-  grid-template-rows: 100vh auto auto auto auto;
-  gap: 32px 0px;
+  grid-template-rows: minmax(660px, 100vh) auto auto auto auto;
+  gap: 104px 0px;
   grid-template-areas:
     "hero hero hero hero" ". work work ." ". about about ."
     ". contact contact ." "footer footer footer footer";
@@ -240,7 +240,7 @@ body {
   padding-top: 120px;
 }
 
-.heroContent__header {
+.heroContent__headline {
   margin-bottom: 48px;
 }
 
@@ -255,7 +255,6 @@ body {
 
 .work {
   grid-area: work;
-  padding: 48px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto minmax(40vh, 400px) minmax(40vh, 400px);
@@ -345,7 +344,6 @@ body {
 
 .about {
   grid-area: about;
-  padding: 48px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto min-content;
@@ -372,7 +370,6 @@ body {
 
 .contact {
   grid-area: contact;
-  padding: 48px 0;
   justify-self: center;
   width: 60%;
 }
@@ -403,10 +400,68 @@ body {
 }
 
 .footer__link {
-  padding: 120px 0 16px 0;
+  padding: 48px 0 16px 0;
   font-size: 12px;
 }
 
 .impressum {
   padding: 48px;
+}
+
+@media screen and (max-width: 768px) {
+  .gridContainer {
+    gap: 48px 0px;
+  }
+
+  .hero {
+    display: block;
+  }
+
+  .heroContent__headline {
+    font-size: 72px;
+  }
+
+  .heroContent,
+  .header,
+  .work,
+  .about,
+  .contact,
+  .footer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .work {
+    display: block;
+  }
+
+  .teaser {
+    margin-bottom: 24px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__image {
+    height: 30vh;
+    align-self: center;
+  }
+
+  .contact {
+    width: 100%;
+  }
+
+  .contact__buttonList {
+    flex-direction: column;
+  }
+
+  .contact__button,
+  .contact__button:first-of-type {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 24px;
+    text-align: center;
+  }
 }
