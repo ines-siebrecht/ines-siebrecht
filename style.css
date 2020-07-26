@@ -144,7 +144,8 @@ body {
   color: #162a36;
 }
 
-.link:hover {
+.link:hover,
+.link:focus {
   color: #f24130;
 }
 
@@ -307,7 +308,9 @@ body {
   position: relative;
 }
 
-.teaser:hover .teaser__overlay {
+.teaser:hover .teaser__overlay,
+.teaser:focus .teaser__overlay,
+.teaser:focus-within .teaser__overlay {
   opacity: 1;
 }
 .teaser__image {

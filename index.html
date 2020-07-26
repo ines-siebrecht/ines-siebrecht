@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-
     <title>Meet Ines - Portfolio</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=Work+Sans:wght@400;600;700;800&display=swap"
@@ -10,25 +9,28 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script>
-      $(window).load(function () {
-        $("body").removeClass("preload");
-      });
+      window.onload = function () {
+        var el = document.querySelector("#body");
+        el.classList.remove("preload");
+      };
     </script>
   </head>
 
-  <body class="preload gridContainer">
+  <body class="preload gridContainer" id="body">
     <div class="hero">
       <header class="header">
-        <image src="images/logo.svg" height="64" />
+        <image src="images/logo.svg" height="64" alt="logo" />
         <ul class="nav">
           <li class="nav__navListItem">
-            <a class="link nav__navLink" href="#work">Work</a>
+            <a class="link nav__navLink" href="#work" tabindex="0">Work</a>
           </li>
           <li class="nav__navListItem">
-            <a class="link nav__navLink" href="#about">About me</a>
+            <a class="link nav__navLink" href="#about" tabindex="0">About me</a>
           </li>
           <li class="nav__navListItem">
-            <a class="link nav__navLink" href="#contact">Contact</a>
+            <a class="link nav__navLink" href="#contact" tabindex="0"
+              >Contact</a
+            >
           </li>
         </ul>
       </header>
@@ -40,7 +42,7 @@
           Nice to meet you! I’m Ines, a UI/UX designer with a background in
           software engineering based in Berlin, Germany.
         </p>
-        <a class="button" href="#work">See My Recent Work</a>
+        <a class="button" href="#work" tabindex="0">See My Recent Work</a>
       </div>
       <div class="heroImage"></div>
     </div>
@@ -48,32 +50,48 @@
       <div class="work__header">
         <h2>Recent Work</h2>
       </div>
-      <div class="case1 teaser">
-        <img class="teaser__image" src="images/projects/test.png" />
+      <div class="case1 teaser" tabindex="0">
+        <img
+          class="teaser__image"
+          src="images/projects/test.png"
+          alt="mockup of the first case study"
+        />
         <div class="teaser__overlay">
           <p class="teaser__category">UI, UX</p>
           <h3 class="teaser__headline">Capstone #3</h3>
           <a class="button" href="">See More</a>
         </div>
       </div>
-      <div class="case2 work__teaser teaser">
-        <img class="teaser__image" src="images/projects/test.png" />
+      <div class="case2 work__teaser teaser" tabindex="0">
+        <img
+          class="teaser__image"
+          src="images/projects/test.png"
+          alt="mockup of the second case study"
+        />
         <div class="teaser__overlay">
           <p class="teaser__category">UX, Branding</p>
           <h3 class="teaser__headline">Capstone #2</h3>
           <a class="button" href="">See More</a>
         </div>
       </div>
-      <div class="case3 work__teaser teaser">
-        <img class="teaser__image" src="images/projects/test.png" />
+      <div class="case3 work__teaser teaser" tabindex="0">
+        <img
+          class="teaser__image"
+          src="images/projects/test.png"
+          alt="mockup of the third case study"
+        />
         <div class="teaser__overlay">
           <p class="teaser__category">UI</p>
           <h3 class="teaser__headline">Capstone #1</h3>
           <a class="button" href="">See More</a>
         </div>
       </div>
-      <div class="case4 work__teaser teaser">
-        <img class="teaser__image" src="images/projects/test.png" />
+      <div class="case4 work__teaser teaser" tabindex="0">
+        <img
+          class="teaser__image"
+          src="images/projects/test.png"
+          alt="mockup of the fourth case study - Kaus insurance"
+        />
         <div class="teaser__overlay">
           <p class="teaser__category">UI, UX, Branding</p>
           <h3 class="teaser__headline">Kaus Insurance</h3>
@@ -83,7 +101,11 @@
     </div>
     <div class="about" id="about">
       <h2 class="about__headline">About Me</h2>
-      <img class="about__image" src="images/portrait.svg" />
+      <img
+        class="about__image"
+        src="images/portrait.svg"
+        alt="line art portrait of Ines Siebrecht"
+      />
       <article class="about__text">
         In the last seven years, I worked in various fields (if you ask IoT,
         Automotive aftermarket, Fashion, etc.) as a developer. But something was
@@ -109,18 +131,21 @@
         <a
           class="button contact__button"
           href="https://www.linkedin.com/in/ines-siebrecht-a7b706102/"
+          rel="noreferrer"
           target="_blank"
           >LinkedIn</a
         >
         <a
           class="button contact__button"
           href="https://www.pinterest.de/anezka_is"
+          rel="noreferrer"
           target="_blank"
           >Pinterest</a
         >
         <a
           class="button contact__button"
           href="https://www.instagram.com/anezka_is/"
+          rel="noreferrer"
           target="_blank"
           >Instagram</a
         >
