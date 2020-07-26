@@ -147,6 +147,7 @@ body {
 .link:hover,
 .link:focus {
   color: #f24130;
+  outline: none;
 }
 
 .link:active {
@@ -417,6 +418,7 @@ body {
     display: block;
   }
 
+  h1,
   .heroContent__headline {
     font-size: 72px;
   }
