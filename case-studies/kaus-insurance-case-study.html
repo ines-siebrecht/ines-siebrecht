@@ -66,45 +66,61 @@
   </head>
 
   <body class="preload gridContainer gridContainer--caseStudy" id="body">
-    <header class="header header--caseStudy">
-      <picture>
-        <source
-          media="(max-width: 768px)"
-          srcset="../images/logo--small.svg"
-          alt="logo"
-        />
-        <image src="../images/logo.svg" height="64" alt="logo" />
-      </picture>
-      <ul class="nav">
-        <li class="nav__navListItem">
-          <a class="link nav__navLink" href="../index.html#work" tabindex="0"
-            >Work</a
-          >
-        </li>
-        <li class="nav__navListItem">
-          <a class="link nav__navLink" href="../index.html#about" tabindex="0"
-            >About me</a
-          >
-        </li>
-        <li class="nav__navListItem">
-          <a class="link nav__navLink" href="#contact" tabindex="0">Contact</a>
-        </li>
-      </ul>
-    </header>
+    <div class="hero">
+      <header class="header">
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="images/logo--small.svg"
+            alt="logo"
+          />
+          <image src="../images/logo.svg" height="64" alt="logo" />
+        </picture>
+        <ul class="nav">
+          <li class="nav__navListItem">
+            <a class="link nav__navLink" href="../index.html#work" tabindex="0"
+              >Work</a
+            >
+          </li>
+          <li class="nav__navListItem">
+            <a class="link nav__navLink" href="../index.html#about" tabindex="0"
+              >About me</a
+            >
+          </li>
+          <li class="nav__navListItem">
+            <a class="link nav__navLink" href="#contact" tabindex="0"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </header>
+      <div class="heroContent">
+        <h1 class="heroContent__headline" data-shadow="Kaus">
+          Kaus
+        </h1>
+        <p class="heroContent__intro">
+          Kaus is a fictitious insurance company, and as the story goes, it
+          provides insurance for everyone, for every situation. In order to keep
+          costs low and provide easy solutions for customers, prepared packages
+          are sold instead of fully customized options. This allows them to be
+          more efficient and keep their rates more economical than their
+          competitors.
+        </p>
+        <a
+          class="button"
+          href="https://www.figma.com/proto/IF80G5fRpIiVDRDQW92mPX/Prototype?node-id=57%3A23677&scaling=min-zoom"
+          target="_blank"
+          tabindex="0"
+          >See Prototype</a
+        >
+      </div>
+      <div class="heroImage heroImage--kaus"></div>
+    </div>
+
     <main class="caseStudy">
-      <h1 data-shadow="Kaus">Kaus</h1>
       <section class="caseStudy__intro">
         <div class="caseStudy__introText">
           <h2>Project Background</h2>
-          <p>
-            Within the scope of DesignLab's UX Academy, I worked on this project
-            for a big insurance company, Kaus. <br />Kaus is a fictitious
-            insurance company, and as the story goes, it provides insurance for
-            every situation. In order to keep costs low and provide easy
-            solutions for customers, prepared packages are sold instead of fully
-            customized options. This allows them to be more efficient and keep
-            their rates more economical than their competitors.
-          </p>
           <h3>Objectives</h3>
           <p>
             The goal of this project was the creation of a new modern and fresh
@@ -137,7 +153,7 @@
           to analyze competitors.
         </p>
         <img
-          class=""
+          class="caseStudy__image"
           src="kaus-insurance/competitors.png"
           alt="competitor analysis of Kaus"
         />
@@ -202,12 +218,12 @@
           Sarah Valentine and Nigel Blackwood.
         </p>
         <img
-          class=""
+          class="caseStudy__image"
           src="kaus-insurance/persona_sarah.png"
           alt="persona Sarah Valentine"
         />
         <img
-          class=""
+          class="caseStudy__image"
           src="kaus-insurance/persona_nigel.png"
           alt="persona Nigel Blackwood"
         />
@@ -218,7 +234,7 @@
           business side.
         </p>
         <img
-          class=""
+          class="caseStudy__image"
           src="kaus-insurance/venn_diagram.png"
           alt="venn diagram with project goals of Kaus' website"
         />
@@ -231,7 +247,7 @@
           the super-category "Insurances".
         </p>
         <img
-          class=""
+          class="caseStudy__image"
           src="kaus-insurance/sitemap.png"
           alt="sitemap of the Kaus website"
         />
@@ -241,7 +257,7 @@
           path through the website to achieve this goal.
         </p>
         <img
-          class=""
+          class="caseStudy__image"
           src="kaus-insurance/userflow.png"
           alt="userflow of the Kaus website"
         />
@@ -267,7 +283,7 @@
           Hierarchy and to explore the behavior of elements in low-fidelity.
         </p>
         <img
-          class=""
+          class="caseStudy__image"
           src="kaus-insurance/wireframes.png"
           alt="wireframes of the Kaus website"
         />
@@ -278,7 +294,7 @@
           these attributes.
         </p>
         <img
-          class=""
+          class="caseStudy__image"
           src="kaus-insurance/moodboard.png"
           alt="moodboard of the Kaus website"
         />
@@ -289,7 +305,7 @@
           brand iconic.
         </p>
         <img
-          class=""
+          class="caseStudy__image"
           src="kaus-insurance/logo.png"
           alt="logo and wordmark of the Kaus brand"
         />
@@ -299,11 +315,11 @@
           the commonly used blue palettes that only aim to generate trust.
         </p>
         <img
-          class=""
+          class="caseStudy__image"
           src="kaus-insurance/palette_1.png"
           alt="first color palette idea"
         /><img
-          class=""
+          class="caseStudy__image"
           src="kaus-insurance/palette_2.png"
           alt="second color palette idea"
         />
@@ -313,7 +329,7 @@
           created by Pablo Stanley.
         </p>
         <img
-          class=""
+          class="caseStudy__image"
           src="kaus-insurance/imagery.png"
           alt="exploration imagery in different color palettes"
         />
@@ -322,7 +338,7 @@
           design.
         </p>
         <img
-          class=""
+          class="caseStudy__image"
           src="kaus-insurance/style_tile.png"
           alt="style tile for Kaus"
         />
@@ -331,12 +347,12 @@
           elements to create a responsive website design.
         </p>
         <img
-          class=""
+          class="caseStudy__image"
           src="kaus-insurance/responsive_design_home_page.png"
           alt="responsive design of the home page"
         />
         <img
-          class=""
+          class="caseStudy__image"
           src="kaus-insurance/responsive_design_bundle_configurator.png"
           alt="responsive design of the bundle configurator"
         />

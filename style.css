@@ -195,26 +195,31 @@ body {
 
 .gridContainer {
   display: grid;
-  grid-template-columns: minmax(50vw, 580px) minmax(50vw, 580px);
+  grid-template-columns: minmax(16px, 10vw) minmax(80vw, 940px) minmax(
+      16px,
+      10vw
+    );
   grid-template-rows: minmax(660px, 100vh) auto auto auto auto;
   gap: 104px 0px;
   grid-template-areas:
-    "hero hero" "work work" "about about"
-    "contact contact" "footer footer";
+    "hero hero hero" ". work ." ". about ."
+    ". contact ." ". footer .";
 }
 
 .gridContainer--caseStudy {
   display: grid;
-  grid-template-rows: auto 1fr auto auto;
+  grid-template-rows: minmax(660px, 100vh) 1fr auto auto;
   grid-template-areas:
-    "header header" "caseStudy caseStudy"
-    "contact contact" "footer footer";
+    "hero hero hero" ". caseStudy ."
+    ". contact ." ". footer .";
 }
 
 .hero {
   grid-area: hero;
   display: grid;
-  grid-template-columns: auto minmax(40vw, 580px) minmax(40vw, 580px) auto;
+  grid-template-columns:
+    minmax(16px, 10vw) minmax(40vw, 470px) minmax(40vw, 470px)
+    minmax(16px, 10vw);
   grid-template-rows: 128px auto;
   gap: 0px 0px;
 }
@@ -226,10 +231,6 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 1;
-}
-
-.header--caseStudy {
-  grid-area: header;
 }
 
 .nav {
@@ -271,7 +272,12 @@ body {
 
 .heroImage {
   grid-area: 1 / 3 / 3 / 5;
-  background: url(images/patterns/pattern.svg) #0b8c5d repeat;
+  background: url(images/patterns/pattern.svg) #0b8c5d repeat center center;
+  background-size: 136%;
+}
+
+.heroImage--kaus {
+  background: #ecc30b;
 }
 
 .work {
