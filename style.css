@@ -480,6 +480,21 @@ body {
   width: 470px;
 }
 
+.palette {
+  display: flex;
+  flex-direction: row;
+}
+
+.palette__color {
+  flex: 1;
+  padding: 32px;
+  margin: 48px auto 80px auto;
+}
+
+.palette__color--withBorder {
+  border: #eeeeee solid 1px;
+}
+
 @media all and (max-width: 768px) {
   .gridContainer {
     gap: 48px 0px;
