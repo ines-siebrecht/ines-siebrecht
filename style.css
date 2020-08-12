@@ -445,6 +445,25 @@ body {
   grid-area: caseStudy;
 }
 
+.caseStudy__intro {
+  padding: 24px;
+}
+.caseStudy__intro--kaus {
+  background: url(images/patterns/back_4.png) #ffd700 repeat;
+}
+
+.caseStudy__introText {
+  padding: 16px;
+  columns: 2;
+}
+.caseStudy__introText--kaus {
+  background-color: #f2a2a2;
+}
+
+.caseStudy__sectionSubheadline--kaus {
+  color: #f2a2a2;
+}
+
 @media all and (max-width: 768px) {
   .gridContainer {
     gap: 48px 0px;
