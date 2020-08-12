@@ -192,6 +192,25 @@ body {
   background-color: #162a36;
   color: #ffffff;
 }
+.button--secondary {
+  color: #f2a2a2;
+  border: 4px solid #f2a2a2;
+  box-shadow: -8px 8px 0px #f2a2a2;
+}
+
+.button--secondary:hover,
+.button--secondary:focus {
+  box-shadow: -4px 4px 0px #f2a2a2;
+}
+
+.button--secondary:active {
+  background-color: #f2a2a2;
+  color: #ffffff;
+}
+
+.button + .button {
+  margin-left: 16px;
+}
 
 .gridContainer {
   display: grid;
