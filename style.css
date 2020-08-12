@@ -278,8 +278,8 @@ body {
 
 .heroImage--kaus {
   background-image: url(case-studies/kaus-insurance/hero.png),
-    url(images/patterns/back_3.png);
-  background-color: #ecc30b;
+    url(images/patterns/back_4.png);
+  background-color: #ffd700;
   background-repeat: no-repeat, repeat;
   background-position: center center;
   background-size: contain, 10px 10px;
@@ -323,16 +323,16 @@ body {
 }
 
 .case3 .teaser__overlay {
-  background-color: #f2a2a2e0;
+  background-color: #f24130e0;
 }
 
 .case4 {
   grid-area: case4;
-  background: url(images/patterns/back_4.png) repeat;
+  background: url(images/patterns/back_4.png) #ffd700 repeat;
 }
 
 .case4 .teaser__overlay {
-  background-color: #f24130e0;
+  background-color: #f2a2a2e0;
 }
 
 .teaser {
