@@ -445,11 +445,15 @@ body {
   grid-area: caseStudy;
 }
 
+.caseStudy__section {
+  margin-bottom: 104px;
+}
+
 .caseStudy__intro {
   padding: 24px;
 }
 .caseStudy__intro--kaus {
-  background: url(images/patterns/back_4.png) #ffd700 repeat;
+  background: url(images/patterns/back_4.png) #ffd700 repeat center center;
 }
 
 .caseStudy__introText {
@@ -459,9 +463,21 @@ body {
 .caseStudy__introText--kaus {
   background-color: #f2a2a2;
 }
+.caseStudy__sectionSubheadline {
+  margin-bottom: 32px;
+}
 
 .caseStudy__sectionSubheadline--kaus {
   color: #f2a2a2;
+}
+
+.caseStudy__image {
+  width: 940px;
+  margin: 48px auto 80px auto;
+}
+
+.caseStudy__image--s {
+  width: 470px;
 }
 
 @media all and (max-width: 768px) {
