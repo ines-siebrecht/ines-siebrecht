@@ -277,7 +277,12 @@ body {
 }
 
 .heroImage--kaus {
-  background: #ecc30b;
+  background-image: url(case-studies/kaus-insurance/hero.png),
+    url(images/patterns/back_3.png);
+  background-color: #ecc30b;
+  background-repeat: no-repeat, repeat;
+  background-position: center center;
+  background-size: contain, 10px 10px;
 }
 
 .work {
