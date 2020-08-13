@@ -226,6 +226,7 @@ body {
 }
 
 .gridContainer--caseStudy {
+  margin-top: -55px;
   display: grid;
   grid-template-rows: minmax(660px, 100vh) 1fr auto auto;
   grid-template-areas:
@@ -234,6 +235,7 @@ body {
 }
 
 .hero {
+  z-index: 2;
   grid-area: hero;
   display: grid;
   grid-template-columns:
@@ -512,6 +514,24 @@ body {
 
 .palette__color--withBorder {
   border: #eeeeee solid 1px;
+}
+
+.backToTop {
+  z-index: 1;
+  position: sticky;
+  bottom: 80px;
+  right: 80px;
+  top: calc(100vh - 80px);
+  left: calc(100vw - 80px);
+}
+
+.backToTop:hover {
+  z-index: 1;
+  position: sticky;
+  bottom: 80px;
+  right: 80px;
+  left: calc(100vw - 80px);
+  top: calc(100vh - 80px);
 }
 
 @media all and (max-width: 768px) {
