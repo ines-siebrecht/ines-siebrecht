@@ -71,6 +71,18 @@ select {
 }
 
 /* Portfolio */
+:root {
+  --primary-accent-color: #f24130;
+  --secondary-accent-color: #f2a2a2;
+  --background: url(images/patterns/back_1.png);
+}
+
+.kaus {
+    --primary-accent-color: #f2a2a2;
+    --secondary-accent-color: #ffd700;
+    --background: url(images/patterns/back_4.png);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -193,18 +205,18 @@ body {
   color: #ffffff;
 }
 .button--secondary {
-  color: #f2a2a2;
-  border: 4px solid #f2a2a2;
-  box-shadow: -8px 8px 0px #f2a2a2;
+  color: var(--primary-accent-color);
+  border: 4px solid var(--primary-accent-color);
+  box-shadow: -8px 8px 0px var(--primary-accent-color);
 }
 
 .button--secondary:hover,
 .button--secondary:focus {
-  box-shadow: -4px 4px 0px #f2a2a2;
+  box-shadow: -4px 4px 0px --primary-accent-color;
 }
 
 .button--secondary:active {
-  background-color: #f2a2a2;
+  background-color: var(--primary-accent-color)
   color: #ffffff;
 }
 
@@ -300,7 +312,7 @@ body {
 .heroImage--kaus {
   background-image: url(case-studies/kaus-insurance/hero.png),
     url(images/patterns/back_4.png);
-  background-color: #ffd700;
+  background-color: var(--secondary-accent-color);
   background-repeat: no-repeat, repeat;
   background-position: center center;
   background-size: contain, 10px 10px;
@@ -472,24 +484,19 @@ body {
 
 .caseStudy__intro {
   padding: 24px;
-}
-.caseStudy__intro--kaus {
-  background: url(images/patterns/back_4.png) #ffd700 repeat center center;
+  background-image: var(--background); 
+  background-color: var(--secondary-accent-color);
 }
 
 .caseStudy__introText {
   padding: 16px;
   columns: 2;
-}
-.caseStudy__introText--kaus {
-  background-color: #f2a2a2;
-}
-.caseStudy__sectionSubheadline {
-  margin-bottom: 32px;
+  background-color: var(--primary-accent-color);
 }
 
-.caseStudy__sectionSubheadline--kaus {
-  color: #f2a2a2;
+.caseStudy__sectionSubheadline {
+  margin-bottom: 32px;
+  color: var(--primary-accent-color);
 }
 
 .caseStudy__image {
