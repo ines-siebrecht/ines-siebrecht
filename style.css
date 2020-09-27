@@ -90,7 +90,7 @@ select {
   --primary-accent-color: #f24130;
   --secondary-accent-color: #162a36;
   --background: url(images/patterns/back_1.png);
-  --hero-image: url(images/projects/test1.png), var(--background);
+  --hero-image: url(case-studies/city-night-line/hero.png), var(--background);
 }
 
 .capstone2 {
