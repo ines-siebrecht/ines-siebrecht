@@ -97,7 +97,7 @@ select {
   --primary-accent-color: #8ad0b9;
   --secondary-accent-color: #162a36;
   --background: url(images/patterns/back_2.png);
-  --hero-image: url(images/projects/test2.png), var(--background);
+  --hero-image: url(case-studies/8fit/hero.png), var(--background);
 }
 
 .capstone3 {
