@@ -520,8 +520,17 @@ sup {
 
 .caseStudy__introText {
   padding: 16px;
-  columns: 2;
+  // columns: 2;
   background-color: var(--primary-accent-color);
+}
+
+.intro {
+  display: flex;
+}
+
+.intro__left {
+  width: 64%;
+  margin-right: 32px;
 }
 
 .caseStudy__sectionSubheadline {
@@ -580,7 +589,8 @@ sup {
   text-align: center;
   vertical-align: middle;
 }
-.featureMap {}
+.featureMap {
+}
 
 .featureMap__annotation {
   position: absolute;
