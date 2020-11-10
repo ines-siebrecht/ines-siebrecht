@@ -323,7 +323,7 @@ sup {
 
 .heroContent {
   grid-area: 2 / 2 / 3 / 3;
-  padding-top: 120px;
+  padding-top: 96px;
 }
 
 .heroContent__headline {
