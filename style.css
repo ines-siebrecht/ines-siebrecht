@@ -178,6 +178,11 @@ p {
   margin: 16px 0;
 }
 
+ul,
+.list {
+  margin: 0 0 16px 24px;
+}
+
 sup {
   font-size: 10px;
 }
