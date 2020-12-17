@@ -513,15 +513,14 @@ sup {
 }
 
 .caseStudy__intro {
-  padding: 24px;
+  padding: 16px;
   background-image: var(--background);
   background-color: var(--secondary-accent-color);
 }
 
 .caseStudy__introText {
   padding: 16px;
-  // columns: 2;
-  background-color: var(--primary-accent-color);
+  background-color: #ffffff;
 }
 
 .intro {
