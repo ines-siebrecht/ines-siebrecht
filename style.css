@@ -556,12 +556,13 @@ sup {
 
 .caseStudy__embeddingContent {
   position: relative;
-  width: 100%;
+  width: 80%;
   overflow: hidden;
   padding-top: 56.25%;
+  margin: 48px auto 80px auto;
 }
 
-.caseStudy__embedded  {
+.caseStudy__embedded {
   position: absolute;
   top: 0;
   left: 0;
@@ -573,7 +574,8 @@ sup {
 }
 
 .caseStudy__image {
-  width: 940px;
+  /* width: 940px;*/
+  width: 80%;
   margin: 48px auto 80px auto;
 }
 
@@ -668,6 +670,10 @@ sup {
     padding-top: 0;
   }
 
+  .header {
+    padding-top: 16px;
+  }
+
   .heroContent,
   .header,
   .work,
@@ -684,6 +690,10 @@ sup {
 
   .teaser {
     margin-bottom: 24px;
+  }
+
+  .teaser__headline {
+    margin-bottom: 16px;
   }
 
   .about {
