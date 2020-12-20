@@ -102,7 +102,7 @@ select {
 
 .capstone3 {
   --primary-accent-color: #0367a6;
-  --secondary-accent-color: #ffd700;
+  --secondary-accent-color: #70bea5;
   --background: url(images/patterns/back_3.png);
   --hero-image: url(case-studies/roofoss/hero.png), var(--background);
 }
