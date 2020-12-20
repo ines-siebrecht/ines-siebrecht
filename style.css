@@ -94,17 +94,17 @@ select {
 }
 
 .capstone2 {
-  --primary-accent-color: #8ad0b9;
+  --primary-accent-color: #70bea5;
   --secondary-accent-color: #162a36;
   --background: url(images/patterns/back_2.png);
   --hero-image: url(case-studies/8fit/hero.png), var(--background);
 }
 
 .capstone3 {
-  --primary-accent-color: #ffd700;
-  --secondary-accent-color: #f2a2a2;
+  --primary-accent-color: #0367a6;
+  --secondary-accent-color: #ffd700;
   --background: url(images/patterns/back_3.png);
-  --hero-image: url(images/projects/test3.png), var(--background);
+  --hero-image: url(case-studies/roofoss/hero.png), var(--background);
 }
 
 html {
@@ -133,7 +133,7 @@ h1:after {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: headline 15s linear infinite;
+  animation: headline 30s linear infinite;
 }
 @keyframes headline {
   0% {
@@ -385,7 +385,7 @@ sup {
 }
 
 .case1 .teaser__overlay {
-  background-color: #ffd700e0;
+  background-color: #0367a6e0;
 }
 
 .case2 {
