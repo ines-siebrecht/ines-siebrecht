@@ -365,6 +365,30 @@ sup {
   background-size: contain, 10px 10px;
 }
 
+.heroImage--roofoss {
+  background-image: url(case-studies/roofoss/hero.png),
+    url(images/patterns/back_3.png);
+  background-color: #0367a6;
+}
+
+.heroImage--8fit {
+  background-image: url(case-studies/8fit/hero.png),
+    url(images/patterns/back_2.png);
+  background-color: #70bea5;
+}
+
+.heroImage--cnl {
+  background-image: url(case-studies/city-night-line/hero.png),
+    url(images/patterns/back_1.png);
+  background-color: #f24130;
+}
+
+.heroImage--kaus {
+  background-image: url(case-studies/kaus-insurance/hero.png),
+    url(images/patterns/back_4.png);
+  background-color: #ffd700;
+}
+
 .work {
   grid-area: work;
   display: grid;
@@ -533,6 +557,22 @@ sup {
   padding: 16px;
   background-image: var(--background);
   background-color: var(--secondary-accent-color);
+}
+
+.caseStudy__intro--roofoss {
+  background-image: url(images/patterns/back_3.png);
+}
+
+.caseStudy__intro--kaus {
+  background-image: url(images/patterns/back_4.png);
+}
+
+.caseStudy__intro--cnl {
+  background-image: url(images/patterns/back_1.png);
+}
+
+.caseStudy__intro--8fit {
+  background-image: url(images/patterns/back_2.png);
 }
 
 .caseStudy__introText {
