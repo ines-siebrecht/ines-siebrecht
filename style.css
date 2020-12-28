@@ -695,7 +695,6 @@ sup {
   .caseStudy {
     width: calc(100% - 32px);
     padding: 0 16px;
-    margin: 0px;
   }
 
   .hero {
@@ -764,7 +763,7 @@ sup {
   }
 
   .contact {
-    width: calc(100% - 32px);
+    margin: auto;
   }
 
   .contact__buttonList {
