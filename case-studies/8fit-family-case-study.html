@@ -124,7 +124,9 @@
 
       <main class="caseStudy" id="project">
         <h2 class="h3">Project Background</h2>
-        <section class="caseStudy__section caseStudy__intro caseStudy__intro--8fit">
+        <section
+          class="caseStudy__section caseStudy__intro caseStudy__intro--8fit"
+        >
           <div class="caseStudy__introText">
             <h3 class="h4 caseStudy__sectionSubheadline">Objectives</h3>
             <p>
@@ -429,7 +431,7 @@
                 </td>
               </tr>
               <tr>
-                <td>Personalized meals (portion site, etc.)</td>
+                <td>Customized meals (portion size, etc.)</td>
                 <td class="table__cell">
                   <img
                     class="featureMap__icon"
@@ -699,9 +701,11 @@
             measurement point are named
           </p>
           <p>
-            I followed up with user interviews to gain more knowledge about
-            users of health and wellness apps. Especially their motivation,
-            needs, and frustrations they are facing was of interest.
+            I followed up with user interviews. To gain more knowledge, I talked
+            with four users of health and wellness apps, two of which use 8fit.
+            Their motivation, needs, and frustrations they are facing was of
+            particular interest to me to find opportunities to improve the
+            current 8fit experience.
             <a
               class="link"
               href="https://miro.com/app/board/o9J_lay4A7c=/"
@@ -721,6 +725,38 @@
               src="8fit/user-research-affinity-map.jpg"
               alt="affinity map of the user interviews"
           /></a>
+          <p></p>
+          <h5>Insights</h5>
+          <ul>
+            <li>
+              most users work towards a goal but are not willing to give up on
+              tasty food since it is essential for a balanced life
+            </li>
+            <li>
+              apps help to make eating habits better visible and form new ones
+            </li>
+            <li>
+              users plan their meals mostly before visiting the grocery store
+            </li>
+            <li>everyday meals need to be quick and easy to prepare</li>
+          </ul>
+          <h5>Needs</h5>
+          <ul>
+            <li>effortless ways to track/ plan meals</li>
+            <li>
+              tasty recipes that are quickly prepared and need a reasonable
+              amount of ingredients
+            </li>
+            <li>reminder and incentives to stay on track</li>
+          </ul>
+          <h5>Pain Points</h5>
+          <ul>
+            <li>
+              to reconcile reaching a weight/fitness goal with cooking for a
+              family or partner is difficult
+            </li>
+            <li>leftover ingredients and resulting food waste is a problem</li>
+          </ul>
         </section>
         <section class="caseStudy__section">
           <h2 class="h3">Define</h2>
@@ -795,15 +831,42 @@
             Wireframes, UI Design, UI Kit
           </h3>
           <p>
-            In the next step, I created wireframes to integrate the new feature
-            into the structure of the available app.
+            In the next step, I created
+            <a
+              class="link"
+              href="https://www.figma.com/proto/I6wTULtuMxh99qmckWy44C/Wireframes?node-id=90%3A2239&scaling=contain"
+              rel="noreferrer"
+              target="_blank"
+              >wireframes</a
+            >
+            to integrate the new feature into the structure of the available
+            app. I started with reproducing the current app design and afterward
+            modified the screens. My goal was to integrate the new family
+            feature with a minimum of modification in the UI. Seemingly small
+            changes can have a significant impact on a product.<br />
+            Since development teams are often very busy, I aimed to incorporate
+            components already in use. I introduced as few as possible new
+            elements to reduce the effort for developers and keep the design
+            system tidy.
+            <br />Apart from that, I attempted to integrate the feature
+            seamlessly into the existing user flow. The fact one is part of a
+            family account should not significantly change how the food planning
+            works.
           </p>
           <img
             class="caseStudy__image"
             src="8fit/wireframes.png"
             alt="wireframes"
           />
-          <p>Afterward, I created the UI design.</p>
+          <p>
+            Afterward, I created the UI design. Here I paid attention to
+            maintain 8fit's visual language. For the onboarding screens, I chose
+            images that go well with the existing food imagery. <br />
+            To make it easier for the users to identify which family member is
+            eating a particular meal, I decided to use recurring colors. In
+            combination with the user's initial and profile picture, the colors
+            serve to quickly recognize family members.
+          </p>
           <div class="caseStudy__embeddingContent">
             <iframe
               class="caseStudy__embedded"
@@ -816,7 +879,7 @@
           </div>
 
           <p>
-            The UI kit summarizes all used components and styles. It holds a
+            The UI Kit summarizes all used components and styles. It holds a
             combination of pre-existing design elements that I extracted from
             the app and newly created components.
             <a
