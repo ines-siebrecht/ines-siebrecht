@@ -616,9 +616,12 @@ sup {
 }
 
 .caseStudy__image {
-  /* width: 940px;*/
   width: 80%;
   margin: 48px auto 80px auto;
+}
+
+.caseStudy__image--noMarginBottom {
+  margin: 48px auto 0 auto;
 }
 
 .caseStudy__image--s {
@@ -628,12 +631,17 @@ sup {
 .palette {
   display: flex;
   flex-direction: row;
+  margin: 48px auto 80px auto !important;
+}
+
+.palette--collage {
+  width: 80%;
+  margin-top: 8px !important;
 }
 
 .palette__color {
   flex: 1;
   padding: 32px;
-  margin: 48px auto 80px auto;
 }
 
 .palette__color--withBorder {
@@ -778,9 +786,9 @@ sup {
     text-align: center;
   }
 
-  .caseStudy__image--s {
+  /*.caseStudy__image--s {
     width: 80%;
-  }
+  }*/
 
   .palette__color {
     padding: 32px 0 0 0;
